@@ -1,6 +1,6 @@
 package com.bl.employee;
 
-public class EmployeeWageUC5 {
+public class EmployeeWageUC6 {
     
     int empCheck, monthlyWage;;
     int empHours = 0, wagePerHour = 20, numberOfWorkingDays = 20;
@@ -10,7 +10,7 @@ public class EmployeeWageUC5 {
 
         System.out.println("Welcome to Employee Wage Computation Program");
 
-        EmployeeWageUC5 wage = new EmployeeWageUC5();
+        EmployeeWageUC6 wage = new EmployeeWageUC6();
         wage.monthlyWage();
 
     }
