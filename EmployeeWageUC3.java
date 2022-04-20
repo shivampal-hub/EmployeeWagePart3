@@ -21,21 +21,26 @@ public class EmployeeWageUC3 {
         Random rand = new Random();
         empCheck = rand.nextInt(3);
 
-        switch (empCheck) {
+        if (empCheck == 0) {
 
-            case 0:
-                System.out.println("Employee Present(Full Time)");
-                empHours = 8;
-                dailyWage();
-                break;
-            case 1:
-                System.out.println("Employee Present(Half Time)");
-                empHours = 4;
-                dailyWage();
-                break;
-            default:
-                System.out.println("Employee Absent");
+            System.out.println("Employee Absent");
 
+        }
+
+        else if (empCheck == 1) {
+
+            System.out.println("Employee Present(Full Time)");
+
+            empHours = 8;
+            dailyWage();
+
+        }
+        else {
+
+            System.out.println("Employee Present(Half Time)");
+
+            empHours = 4;
+            dailyWage();
         }
     }
     public void dailyWage() {
@@ -49,3 +54,4 @@ public class EmployeeWageUC3 {
 
     }
 }
+
