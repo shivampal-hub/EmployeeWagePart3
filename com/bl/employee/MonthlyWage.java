@@ -11,6 +11,15 @@ public class MonthlyWage {
     public void monthlyWage() {
 
         while(totalEmpHours <= maxWorkingHours && totalWorkingDays < numberOfWorkingDays) {
+    int empHours = 0;
+    int wagePerHour = 20;
+    int numberOfWorkingDays = 20;
+    int totalEmpHours = 0;
+    int totalWorkingDays = 0;
+
+    public void monthlyWage() {
+
+        for(int i = 0;i<numberOfWorkingDays;i++) {
             totalWorkingDays++;
 
             Random rand = new Random();
