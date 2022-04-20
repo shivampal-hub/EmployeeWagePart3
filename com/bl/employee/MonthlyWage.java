@@ -5,6 +5,12 @@ import java.util.Random;
 public class MonthlyWage {
 
     int empCheck, monthlyWage;;
+    int empHours = 0, wagePerHour = 20, numberOfWorkingDays = 20;
+    int totalEmpHours = 0, totalWorkingDays = 0, maxWorkingHours = 100;
+
+    public void monthlyWage() {
+
+        while(totalEmpHours <= maxWorkingHours && totalWorkingDays < numberOfWorkingDays) {
     int empHours = 0;
     int wagePerHour = 20;
     int numberOfWorkingDays = 20;
@@ -35,6 +41,7 @@ public class MonthlyWage {
             }
             totalEmpHours += empHours;
             System.out.println("Day: " + totalWorkingDays + " Emp Hrs: " + empHours);
+            System.out.println();
         }
         monthlyWage = totalEmpHours * wagePerHour;
         System.out.println("Monthly Wage of the Employee is: " +monthlyWage);
